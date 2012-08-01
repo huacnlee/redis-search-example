@@ -9,7 +9,7 @@ git clone git://github.com/huacnlee/redis-search-example.git
 cd redis-search-example
 bundle install
 bundle exec rake db:create
-bunlde exec rake db:migrate
+bundle exec rake db:migrate
 bundle exec rails s
 ```
 
