@@ -1,0 +1,25 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+body { margin:0px;}
+
+.searchbox { padding:20px; background:#c7cfff; border-bottom:1px solid #a2aadd; }
+
+.new_project { margin:20px; border-bottom:1px solid #ccc; padding:20px;}
+.projects {
+  margin:0; padding:0 20px;
+  li {
+    padding:10px;
+    border-bottom:1px dashed #ccc;
+    margin:0;
+    list-style-position: inside;
+    list-style: none;
+    h2 {
+      line-height:100%; margin:0; font-size:14px; margin-bottom:6px;
+      .lang { font-size:10px; color:#fff; background:#a2aadd; border-radius: 80px; padding:1px 4px; font-weight:normal; margin-left:10px; }
+    }
+    .info { color:#999; font-size:12px;}
+  }
+}

@@ -1,0 +1,20 @@
+<%= form_for(@project) do |f| %>
+    <%= f.label :full_name %>
+    <%= f.text_field :full_name, :placeholder => "example: twitter/bootstrap" %>
+    <%= f.submit "Create form Github" %>
+<% end %>
+
+<ul class="projects">
+<% @projects.each do |project| %>
+  <li>
+    <h2><%= link_to project.full_name, project.url, :target => "_blank" %> <span class="lang"><%= project.language %></span></h2>
+    <div class="info">
+        <%= project.forks %> Forks, <%= project.watchers %> Watchers
+    </div>
+    <div class="desc">
+        <%= project.description %>
+    </div>
+  </li>
+<% end %>
+</ul>
+
